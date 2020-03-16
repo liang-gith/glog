@@ -1,6 +1,14 @@
 glog
 ====
 
+Update for https://github.com/google/glog:
+
+- remove default flag settings
+- use open option to configure the settings
+
+glog
+====
+
 Leveled execution logs for Go.
 
 This is an efficient pure Go implementation of leveled logs in the
