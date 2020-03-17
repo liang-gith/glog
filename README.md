@@ -6,6 +6,24 @@ Update for https://github.com/google/glog:
 - remove default flag settings
 - use open option to configure the settings
 
+## Quick Start
+
+````golang
+import "github.com/x-mod/glog"
+
+func main(){
+	glog.Open(
+		glog.LogToStderr(true),
+		glog.Verbosity(2),
+	)
+	defer glog.Close()
+
+	...
+}
+````
+
+referrence: [x-mod/glog 级别日志，以及 glog 陷阱与改造](https://github.com/x-mod/images/blob/master/x-mod-glog/index.md)
+
 glog
 ====
 
