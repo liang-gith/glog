@@ -13,6 +13,13 @@ func main() {
 	)
 	defer glog.Flush()
 
+	go func() {
+		glog.Info("go routine f1.... ok")
+	}()
+
+	go func() {
+		glog.Info("go routine f2.... ok")
+	}()
 	glog.Error("error .... ok")
 	glog.Warning("warning .... ok")
 	glog.Info("info .... ok")
